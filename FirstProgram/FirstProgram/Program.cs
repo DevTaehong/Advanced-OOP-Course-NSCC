@@ -12,6 +12,7 @@ namespace FirstProgram
         {
             Console.WriteLine("Hello All");
             Console.WriteLine("HI");
+            Console.WriteLine("My name is Taehong");
         }
     }
 }
