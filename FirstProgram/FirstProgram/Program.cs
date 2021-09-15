@@ -11,6 +11,7 @@ namespace FirstProgram
         static void Main(string[] args)
         {
             Console.WriteLine("Hello All");
+            Console.WriteLine("HI");
         }
     }
 }
