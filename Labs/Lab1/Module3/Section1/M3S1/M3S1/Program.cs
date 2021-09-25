@@ -48,7 +48,7 @@ namespace SchoolTracker
 
             foreach (var student in students)
             {
-                Console.WriteLine("Name: {0}, Grade: {1}", student.Name, student.Grade);
+                Console.WriteLine("Name: {0}, Grade: {1} Address: {2}", student.Name, student.Grade, student.Address);
             }
         }
 
