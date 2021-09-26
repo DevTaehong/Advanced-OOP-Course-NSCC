@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace M4S3
 {
@@ -12,15 +9,23 @@ namespace M4S3
     }
     class PayRoll
     {
-        Teacher teacher1 = new Teacher();
-        Teacher teacher2 = new Teacher();
-        Principal principal1 = new Principal();
+        List<IPayee> payees = new List<IPayee>();
+        //Default Constructor
+        public PayRoll()
+        {
+            payees.Add(new Teacher());
+            payees.Add(new Teacher());
+            payees.Add(new Principal());
+        }
+
+        
 
         public void Payall()
         {
-            teacher1.Pay();
-            teacher2.Pay();
-            principal1.Pay();
+            foreach (var payee in payees)
+            {
+                payee.Pay();
+            }
         }
     }
 }
