@@ -11,9 +11,7 @@ namespace M4S3
         
         List<IGraduate> grads = new List<IGraduate>();
 
-        public Registrar()
-        {
-        }
+       
 
         public Registrar(List<IGraduate> grads)
         {

@@ -18,6 +18,7 @@ namespace M4S3
         {
             PayRoll payRoll = new PayRoll();
             payRoll.Payall();
+
             var adding = true;
 
             while (adding)
@@ -62,8 +63,11 @@ namespace M4S3
                 Console.WriteLine("Name: {0}, Grade: {1}", student.Name, student.Grade);
             }
             Exports();
-            Registrar registrar = new Registrar();
-            registrar.graduateAll();
+
+            Student student1 = new Student();
+            student1.graduate();
+
+          
 
         }
 
