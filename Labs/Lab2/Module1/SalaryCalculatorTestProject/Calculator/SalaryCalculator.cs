@@ -27,5 +27,30 @@ namespace Calculator
             }
           return  annualSalary / HoursInYear;
         }
+
+        public TaxData TaxWithheld(double weeklySalary, int numDependents)
+        {
+            if(numDependents <= -1)
+            {
+                throw new InvalidOperationException("Number dependents cannot be negative.");
+            }
+
+            else if (weeklySalary == 0)
+            {
+                throw new InvalidOperationException("Weekly salary must be greater than zero.");
+            }
+            else
+            {
+                TaxData objectOne = new TaxData();
+                objectOne.ProvincialTaxWithheld = 0.06 * weeklySalary;
+                objectOne.FederalTaxWithheld = 0.25 * weeklySalary;
+                objectOne.DependentDeduction = 0.02 * weeklySalary * numDependents;
+                objectOne.TotalWithheld = objectOne.ProvincialTaxWithheld + objectOne.FederalTaxWithheld - objectOne.DependentDeduction;
+                objectOne.TotalTakeHome = weeklySalary - objectOne.TotalWithheld;
+
+                return objectOne;
+            }
+            
+        }
     }
 }
