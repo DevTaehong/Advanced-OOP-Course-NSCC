@@ -12,11 +12,11 @@ namespace ServerChat
     {
         static void Main(string[] args)
         {
+            /*--------------------------Part 1 --------------------------------*/
             Console.WriteLine(args[0]);
             Console.ReadLine(); // Blocking statement
-            /*-------Part 1 --------------------------------
+
             // Run as Clinet vs Server
-            
             Console.WriteLine("Listening For Messages");
 
             // User Input mode. When I key pressed
@@ -29,9 +29,9 @@ namespace ServerChat
 
             // Let the user quit
             Console.WriteLine($"\nYou Typed {userKey.Key}");
-            --------Part 1 Ends--------*/
+            Console.Beep();
 
-            /* ------Part 2----------- 
+            /* ------Part 2------------------------------------------------------------
             while (true)
             {
 
@@ -52,9 +52,9 @@ namespace ServerChat
             }
             -------------------Part 2 Ends---------------------*/
 
-            //----------------- Part 3
+            /*----------------- Part 3
             // Run as Client vs Server
-            if(args.Contains("-server"))
+            if (args.Contains("-server"))
             {
                 Console.WriteLine("Server Mode");
                 Server server = new Server();
@@ -89,6 +89,7 @@ namespace ServerChat
 
 
             }
+            -----------------------Part 3 --------*/
         }
     }
 }
