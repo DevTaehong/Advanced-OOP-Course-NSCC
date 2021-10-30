@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{CD3ADD32-E9CE-4334-B599-FBAE4D66C347}</ProjectGuid>
+    <ProjectGuid>{6A7B6EC4-BB03-4FD3-BA6A-328126765C1C}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Assignment_Part1</RootNamespace>
-    <AssemblyName>Assignment_Part1</AssemblyName>
+    <RootNamespace>ChatConsole</RootNamespace>
+    <AssemblyName>ChatConsole</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -50,9 +50,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CharLib\CharLib.csproj">
-      <Project>{008DE4E6-1923-4465-BF79-C3D775E57DD2}</Project>
-      <Name>CharLib</Name>
+    <ProjectReference Include="..\ChatLib\ChatLib.csproj">
+      <Project>{6a3a3cff-2c6e-45fb-94a1-a3091b7edd1d}</Project>
+      <Name>ChatLib</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
